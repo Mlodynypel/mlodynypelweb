@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>mlodynypel.pl</title>
+    <link rel="icon" type="img" href="https://cdn.discordapp.com/attachments/1124066381588082708/1126960445492822156/nepel.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="fontawesome.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="FeciuSzef.js"></script>
+    <script type="text/javascript" src="jquery.min_1.js"></script>
+    <script type="text/javascript" src="jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://kit.fontawesome.com/badf63d9c9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="main" class="center">
+      <img src="images/firstimg.png" class="firstimg" />
+      <div id="overlay" onclick="play()">
+        <span class="header center begin" id="status_text">click anywhere</span>
+      </div>
+      <div class="center">
+        <div class="list">
+          <div class="members">
+            <div class="card">
+              <img
+                class="pfp"
+                src="https://cdn.discordapp.com/attachments/1124066381588082708/1126960445492822156/nepel.jpg"
+                alt="a"
+              />
+              <div class="username">mlodynypel</div>
+              <div class="sub"><span class="auto-type"></span></span></div>
+              <div class="socials">
+              <a href="https://discord.com/users/1110573721967669289/" target="_blank"
+                  ><i class="fa-brands fa-discord"></i
+                ></a>
+                <a href="https://github.com/Mlodynypel" target="_blank"><i class="fab fa-github"></i></a>
+                <a
+                  href="https://steamcommunity.com/profiles/76561199123497373/"
+                  target="_blank"
+                  ><i class="fab fa-steam"></i
+                ></a>
+                <a href="https://twitch.tv/mlodynypel" target="_blank"
+                  ><i class="fab fa-twitch"></i
+                ></a>
+                <a href="https://www.tiktok.com/@mlodynypel" target="_blank"
+                  ><i class="fa-brands fa-tiktok"></i
+                ></a>
+   
+        </div>
+        <script>
+          $("#background").fadeOut(0);
+          $(".card").fadeOut(0);
+
+          const play = function () {
+            $("#overlay").fadeOut(100);
+
+            setTimeout(goAnim, 100);
+          };
+
+          const goAnim = function () {
+            $(".firstimg").fadeOut(1);
+            $(".card").fadeIn();
+            $("#background").fadeIn();
+          };
+        </script>
+
+        <script>
+          var typed = new Typed(".auto-type", {
+            strings: [
+              ".gg/fr3kless^3000",
+              ".gg/xenonrp^5000",
+            ],
+            typeSpeed: 120,
+            backSpeed: 50,
+            loop: true,
+          });
+        </script>
+
+        <script>
+
+          var space = " ";
+          var speed = "300";
+          var pos = 0;
+          var msg = "Esla Website";
+          function Scroll()
+        </script>
+
+        <script>
+          var player = document.getElementById("music");
+
+          if (player) {
+            window.addEventListener("keydown", function (event) {
+              var key = event.which || event.keyCode;
+              if (key === 32) {
+                event.preventDefault();
+                player.paused ? player.play() : player.pause();
+              } else if (key == 37) {
+                event.preventDefault();
+                player.currentTime = player.currentTime - 10;
+              } else if (key == 39) {
+                event.preventDefault();
+                player.currentTime = player.currentTime + 10;
+              }
+            });
+
+            if (window.location.search) {
+              var duration = window.location.search.substr(1);
+              player.currentTime = simpleDurationParsing(duration);
+              player.play();
+            }
+          }
+
+          function simpleDurationParsing(duration) {
+            duration = duration.toLowerCase();
+
+            var seconds = 0;
+            var index = 0;
+
+            if ((index = duration.indexOf("m")) > -1) {
+              seconds += parseInt(duration.substring(0, index)) * 60;
+              duration = duration.substr(index + 1);
+            }
+
+            if ((index = duration.indexOf("s")) > -1)
+              duration = duration.substring(0, index);
+
+            if (duration.length) seconds += parseInt(duration);
+
+            return seconds;
+          }
+        </script>
+      </div>
+    </div>
+    
+  </body>
+</html>
